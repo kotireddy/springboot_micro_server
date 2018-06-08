@@ -1,0 +1,12 @@
+## Server related configuration
+server:
+  port: ${PORT:1111}    # Indicate the default PORT where this service will be started
+  servlet:
+    context-path: /springboot_micro_server
+
+eureka:
+  client:
+    register-with-eureka: false     #telling the server not to register himself in the service registry
+    fetch-registry: false
+  server:
+    wait-time-in-ms-when-sync-empty: 0    #wait time for subsequent sync
