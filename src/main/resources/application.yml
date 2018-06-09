@@ -1,8 +1,7 @@
 ## Server related configuration
 server:
-  port: ${PORT:1111}    # Indicate the default PORT where this service will be started
-  servlet:
-    context-path: /springboot_micro_server
+  port: ${PORT:8761}    # Indicate the default PORT where this service will be started
+
 
 eureka:
   client:
